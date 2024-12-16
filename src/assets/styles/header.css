@@ -33,6 +33,11 @@
     padding: 0;
     margin: 0;
   }
+
+  .nav-list a, .submenu a{
+    color: white;
+    text-decoration: none;
+  }
   
   .nav-item {
     position: relative;

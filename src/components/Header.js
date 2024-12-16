@@ -4,6 +4,7 @@ import { IoSearchSharp } from "react-icons/io5";
 import { FiShoppingCart } from "react-icons/fi";
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import logo from "../assets/images/logo.png";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [showSubMenu, setShowSubMenu] = useState(false);
@@ -21,7 +22,9 @@ const toggleMenu = () => {
     <header className="header">
       {/* Left Section: Logo */}
       <div className="header-left">
+        <Link to="/">
         <img src={logo} alt="Logo" className="logo" />
+        </Link>
       </div>
 
       {/* Center Section: Navigation */}
@@ -33,7 +36,9 @@ const toggleMenu = () => {
               <span className="dropdown-arrow">▼</span>
               {showSubMenu && (
                 <ul className="submenu">
-                  <li className="submenu-item">Records</li>
+                  <li className="submenu-item">
+                    <Link to="/records">Records</Link>
+                  </li>
                   <li className="submenu-item">Cassettes</li>
                   <li className="submenu-item">Stories</li>
                   <li className="submenu-item">Qrates Curated</li>
@@ -71,7 +76,9 @@ const toggleMenu = () => {
                             <span className="dropdown-arrow">▼</span>
                             {showSubMenu && (
                                 <ul className="submenu">
-                                    <li className="submenu-item">Records</li>
+                                    <li className="submenu-item">
+                                      <Link to="/records">Records</Link>
+                                    </li>
                                     <li className="submenu-item">Cassettes</li>
                                     <li className="submenu-item">Stories</li>
                                     <li className="submenu-item">Qrates Curated</li>

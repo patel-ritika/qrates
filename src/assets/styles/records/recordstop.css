@@ -1,0 +1,57 @@
+.recordstop-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black; /* Background color */
+    color: white; /* Text color */
+    padding: 20px; /* Padding for spacing */
+  }
+  
+  .recordstop-left {
+    flex: 1; /* Adjusts width dynamically */
+    text-align: left; /* Aligns text to the left */
+    margin: 0; /* Removes default margin */
+    font-size: 60px;
+  }
+  
+  .recordstop-center {
+    font-size: 60px;
+    flex: 1; /* Adjusts width dynamically */
+    text-align: center; /* Centers text */
+    margin: 0; /* Removes default margin */
+  }
+  
+  .recordstop-right {
+    font-size: 60px;
+    flex: 1; /* Adjusts width dynamically */
+    text-align: right; /* Aligns text to the right */
+    margin: 0; /* Removes default margin */
+  }
+  
+  /* Responsive Styles */
+@media (max-width: 768px) {
+    .recordstop-container {
+      flex-direction: column; /* Stacks items vertically */
+      text-align: center; /* Centers all text */
+    }
+  
+    .recordstop-left,
+    .recordstop-center,
+    .recordstop-right {
+      font-size: 30px; /* Smaller font size for mobile */
+      text-align: center; /* Center text for all sections */
+      margin-bottom: 10px; /* Adds spacing between stacked items */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .recordstop-left,
+    .recordstop-center,
+    .recordstop-right {
+      font-size: 20px; /* Even smaller font size for smaller screens */
+    }
+  
+    .recordstop-container {
+      padding: 10px; /* Reduces padding for smaller devices */
+    }
+  }
