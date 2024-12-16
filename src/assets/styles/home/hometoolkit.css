@@ -1,0 +1,120 @@
+/* Container for the entire section */
+.toolkit-container {
+    text-align: center;
+    padding: 0;
+  }
+  
+  /* Styling for the image and text overlay */
+  .toolkit_image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1510px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  .toolkit-image {
+    width: 100%;
+    height: auto;
+    border: 3px solid white; /* White border for the image */
+    
+  }
+  
+  /* Positioning the text and list inside the image */
+  .text-overlay {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translateY(0);
+    color: white;
+  }
+  
+  /* Styling for the toolkit title (h4 instead of h1) */
+  .toolkit-title {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border: 2px solid white; /* White border around the title */
+    border-radius: 5px;
+  }
+  
+  /* Styling for the list below the title */
+  .toolkit-list {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .toolkit-list li {
+    font-size: 40px;
+    text-align: left;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+  /* Styling for the latest section */
+  .latest-title {
+    font-size: 22px;
+    color: white;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  /* Responsive Styles for smaller screens */
+@media (max-width: 768px) {
+    .toolkit-title {
+      font-size: 18px;
+      width: auto;
+      padding: 8px;
+    }
+  
+.toolkit-image{
+  height: 400px;
+  width: 375px;
+}
+
+    .toolkit-list li {
+      font-size: 25px;
+      text-align: left;
+    }
+  
+    .latest-title {
+      font-size: 18px;
+      margin-top: 40px; /* Ensure it doesn't get hidden below other content */
+    }
+  
+    /* Adjust text overlay to be more centered on smaller screens */
+    .text-overlay {
+      top: 20%;
+      left: 5%;
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further reduce text size for very small screens */
+    .toolkit-title {
+      font-size: 16px;
+      padding: 6px;
+    }
+  
+    .toolkit-list li {
+      font-size: 20px;
+    }
+  
+    .latest-title {
+      font-size: 16px;
+      margin-top: 30px; /* Ensure proper spacing */
+    }
+  
+    /* Adjust text overlay position for smaller devices */
+    .text-overlay {
+      top: 15%;
+      left: 5%;
+      max-width: 90%;
+    }
+  }

@@ -1,0 +1,100 @@
+.home-second-container {
+    margin-top: 5rem;
+    width: 100%;
+    height: calc(100vh - 50px); /* Adjust to fit the screen size */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .content {
+    text-align: left;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional for better text visibility */
+    max-width: 800px;
+    margin: auto;
+    margin-right: 70rem;
+  }
+  
+  .tag {
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 2px solid white;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+  }
+  
+  .list span {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .list span:hover {
+    text-decoration: underline;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: lighter;
+  }
+  
+  /* Make it responsive for smaller screens */
+@media (max-width: 768px) {
+    .home-second-container {
+      height: 70vh; /* Adjust height for smaller screens */
+      background-size: cover; /* Ensure the image fits */
+      background-position: center; /* Center the background image */
+      margin-top: 2rem; /* Reduce top margin */
+    }
+  
+    .content {
+      padding: 10px; /* Reduce padding */
+      max-width: 90%; /* Fit content within smaller screens */
+      text-align: center; /* Center the content for smaller screens */
+    }
+  
+    .tag {
+      font-size: 14px; /* Adjust font size */
+      padding: 3px 8px; /* Adjust padding */
+    }
+  
+    .list span {
+      font-size: 24px; /* Reduce font size */
+      margin-bottom: 8px; /* Adjust spacing */
+    }
+  
+    .subtitle {
+      font-size: 14px; /* Reduce font size */
+    }
+  }
+  
+  /* Additional styles for very small screens */
+  @media (max-width: 480px) {
+    .home-second-container {
+      height: 60vh; /* Further reduce height */
+    }
+  
+    .content {
+      padding: 10px; /* Adjust padding */
+      text-align: center; /* Center content for very small screens */
+      background-color: rgba(0, 0, 0, 0.7); /* Slightly darker background for better visibility */
+    }
+  
+    .list span {
+      font-size: 20px; /* Smaller font size */
+      margin-bottom: 6px; /* Adjust spacing */
+    }
+  
+    .subtitle {
+      font-size: 12px; /* Reduce font size */
+    }
+  }

@@ -1,0 +1,131 @@
+.home-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .text-container {
+    max-width: 50%;
+    padding-left: 20px;
+  }
+  
+  .text-container h1 {
+    font-size: 3.5rem;
+    padding-left: 5rem;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .text-container h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 5rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .button-row {
+    display: flex;
+    gap: 10px;
+    margin-left: 5rem;
+    width: 400px;
+  }
+  
+  .button-fans {
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .button-artists {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  
+  .image-container {
+    position: relative;
+    max-width: 50%;
+  }
+  
+  .styled-image {
+    position: relative;
+    top: 50px;
+    right: 0;
+    transform: rotate(10deg);
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    border: 5px solid black;
+    padding: 0;
+    margin: 50px;
+    margin-left: -30px;
+  }
+  
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .home-top-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-container {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .text-container h1 {
+    font-size: 2.5rem;
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .image-container {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .styled-image {
+    width: 80%;
+    transform: rotate(10deg); /* Keeps the cross position */
+    margin: 0 auto;
+  }
+
+  .text-container h3 {
+    font-size: 1rem;
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .button-row {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+    width: 80%;
+  }
+
+  .button-fans,
+  .button-artists {
+    width: 100%;
+    font-size: 14px;
+  }
+}

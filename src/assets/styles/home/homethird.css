@@ -1,0 +1,131 @@
+/* Container styling */
+.home-third-container {
+    display: flex;
+    align-items: center;
+    background-color: #FFF804; /* Background color */
+    padding: 20px;
+    height: 100vh; /* Full-screen height */
+    position: relative;
+  }
+  
+  /* Image container */
+  .homethird_image-container {
+    flex: 1; /* Allow the image container to take up one part */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+  }
+  
+  .homethird_artist-image {
+    max-width: 100%; 
+    transform: rotate(-10deg);
+    margin-left: -10px;
+    padding-left: 5rem; 
+    width: 50vw;
+    height: 500px;
+  }
+
+  
+  /* Content container */
+  .homethird_content-container {
+    flex: 2; /* Allow the content container to take up more space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    padding-left: 25rem;
+  }
+  
+  /* FOR ARTISTS box styling */
+  .homethird_for-artists-box {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 110px;
+    background-color: white;
+}
+  
+  /* Main heading styling */
+  .homethird_main-heading {
+    font-size: 35px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Sub-heading styling */
+  .homethird_sub-heading {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .homethird_artist-button {
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    align-self: flex-start; /* Align button to the left */
+  }
+  
+  /* Media query for responsive design */
+@media (max-width: 768px) {
+    .home-third-container {
+      flex-direction: column; /* Stack items in a column for smaller screens */
+      height: auto; /* Let the height adjust based on content */
+      padding: 10px;
+    }
+  
+    .homethird_content-container {
+      padding-left: 0; /* Remove left padding to fit content in small screen */
+      text-align: center; /* Center-align content */
+      padding: 20px;
+    }
+  
+    .homethird_image-container {
+      flex: 0 1 100%; /* Image takes up full width in mobile */
+      display: flex;
+      justify-content: center; /* Center the image */
+      margin-bottom: 20px; /* Add space below the image */
+    }
+  
+    .homethird_artist-image {
+      width: 80%; /* Make image smaller on mobile */
+      height: auto; /* Maintain aspect ratio */
+      margin-left: 0; /* Remove margin on the left */
+      padding-left: 0;
+    }
+  
+    .homethird_main-heading {
+        text-align: left;
+      font-size: 28px; /* Smaller font size for mobile */
+    }
+  
+    .homethird_sub-heading {
+      font-size: 20px; /* Smaller font size for mobile */
+      text-align: left;
+    }
+  
+    .homethird_artist-button {
+      width: 150px; /* Adjust button width for mobile */
+      font-size: 15px; /* Smaller font size for mobile */
+      margin-left: 5rem;
+    }
+  
+    .homethird_for-artists-box {
+      margin: 10px auto; /* Center the box on mobile */
+      width: auto;
+    }
+  }

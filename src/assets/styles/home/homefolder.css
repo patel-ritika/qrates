@@ -1,0 +1,55 @@
+.homefolder_image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px; /* Space between images */
+    margin: 20px auto;
+    max-width: 1200px; /* Adjust as per requirement */
+  }
+  
+  .homefolder_image-box {
+    width: 350px;
+    height: 350px;
+    flex: 1 1 calc(25% - 16px);
+    max-width: calc(25% - 16px);
+    box-sizing: border-box; /* Includes padding and border */
+  }
+  
+  .homefolder_image {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Responsive Design */
+@media (max-width: 768px) { /* Tablet and smaller devices */
+    .homefolder_image-box {
+      flex: 1 1 calc(50% - 16px); /* 2 images per row */
+      max-width: calc(50% - 16px);
+      height: 250px; /* Smaller height for mobile */
+    }
+  
+.homefolder_image-container{
+    justify-content: space-around;
+}
+
+    .homefolder_image {
+      height: 100%;
+      object-fit: cover; /* Maintain aspect ratio */
+    }
+  }
+  
+  @media (max-width: 480px) { /* Small mobile devices */
+    .homefolder_image-container {
+      gap: 8px; /* Reduce gap for smaller screens */
+      padding: 0 4px;
+    }
+  
+    .homefolder_image-box {
+      height: 200px; /* Smaller size for very small screens */
+      flex: 1 1 calc(50% - 8px);
+      max-width: calc(50% - 8px);
+    }
+  }
