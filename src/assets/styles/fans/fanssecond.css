@@ -1,0 +1,106 @@
+/* Container with #d4eccc background */
+.fanssecond-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d4eccc;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+/* Left side styles */
+.fanssecond-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* COMMUNITY text */
+.fanssecond_community-title {
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 30rem;
+    margin-top: -1rem;
+}
+
+/* Combined white box for H1 and H4 */
+.fanssecond_content-box {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    margin-left: 3rem;
+    margin-bottom: 10px;
+}
+
+/* H1 tag style */
+.fanssecond_main-heading {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* H4 paragraph style */
+.fanssecond_description {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.5;
+    color: black;
+}
+
+/* Right side image */
+.fanssecond-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.community-image {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid black;
+}
+
+@media (max-width: 768px) {
+    .fanssecond-container {
+        flex-direction: column-reverse; /* Image first, text second */
+        padding: 10px;
+    }
+
+    .fanssecond-left {
+        margin-right: 0; /* Remove right margin */
+        margin-top: 10px;
+    }
+
+    .fanssecond_community-title {
+        margin-right: 0; /* Reset excessive margins */
+        margin-top: 0;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .fanssecond_content-box {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .fanssecond_main-heading {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .fanssecond_description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .community-image {
+        max-width: 100%; /* Make the image full width on mobile */
+    }
+}
