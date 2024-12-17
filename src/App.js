@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Records from './components/Records';
 import Cassettes from './components/Cassettes';
 import Stories from './components/Stories';
+import Qrates from './components/Qrates';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
               <Route path="/records" element={<Records />} />
               <Route path="/cassettes" element={<Cassettes />} />
               <Route path="/stories" element={<Stories />} />
+              <Route path="/qrates curated" element={<Qrates Curated />} />
              </Routes>
 
          <Footer/>

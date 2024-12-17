@@ -45,7 +45,9 @@ const toggleMenu = () => {
                   <li className="submenu-item">
                     <Link to="/stories">Stories</Link>
                   </li>
-                  <li className="submenu-item">Qrates Curated</li>
+                  <li className="submenu-item">
+                    <Link to="/qrates curated">Qrates Curated</Link>
+                  </li>
                 </ul>
               )}
             </li>
@@ -89,7 +91,9 @@ const toggleMenu = () => {
                                     <li className="submenu-item">
                                       <Link to="/stories">Stories</Link>
                                     </li>
-                                    <li className="submenu-item">Qrates Curated</li>
+                                    <li className="submenu-item">
+                                      <Link to="/qrates curated">Qrates Curated</Link>
+                                    </li>
                                 </ul>
                             )}
                         </li>
