@@ -1,0 +1,116 @@
+.fantstop-container {
+    display: flex;
+    flex-direction: row; /* Left and right side by side */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .fantstop-left {
+    width: 45%; /* Adjust width for left section */
+    padding: 20px;
+    text-align: left;
+    padding-left: 7rem;
+  }
+  
+  .fans-text {
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+  
+  .fans_title-text {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .fans_description-text {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  
+  .fantstop-right {
+    width: 55%; /* Adjust width for right section */
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fan-image {
+    border: 2px solid black;
+    transform: rotate(-10deg); /* Slightly tilted image */
+    max-width: none;
+    width: 60%;
+    height: auto;
+  }
+  
+  .fantstop-footer {
+    width: 100%;
+    background-color: #fff804; /* Background color applied only to footer */
+    text-align: center;
+    padding: 10px 0;
+    height: 90px;
+  }
+  
+  .fantstop-footer h2 {
+    font-size: 30px;
+    margin: 0;
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+  
+  /* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    .fantstop-container {
+        overflow-x: hidden;
+      flex-direction: column; /* Stack sections vertically */
+      padding: 10px;
+    }
+  
+    .fantstop-left {
+      width: 100%; /* Full width */
+      padding: 10px;
+      padding-left: 1rem;
+      text-align: center;
+    }
+  
+.fans-text{
+    margin-right: 15rem;
+}
+
+    .fans_title-text {
+        text-align: left;
+      font-size: 28px; /* Smaller title size for mobile */
+    }
+  
+    .fans_description-text {
+        text-align: left;
+      font-size: 18px; /* Smaller text size for mobile */
+    }
+  
+    .fantstop-right {
+      width: 100%; /* Full width */
+      margin-top: 20px;
+    }
+  
+    .fan-image {
+      width: 80%; /* Larger image size for mobile */
+      transform: rotate(-5deg); /* Less tilt on smaller screens */
+    }
+  
+    .fantstop-footer {
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+  
+    .fantstop-footer h2 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+  }
