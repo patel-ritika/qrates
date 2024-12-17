@@ -66,6 +66,11 @@
   
   /* Responsive Styles for smaller screens */
 @media (max-width: 768px) {
+
+.toolkit-container{
+  overflow-x: hidden;
+}
+
     .toolkit-title {
       font-size: 18px;
       width: auto;
