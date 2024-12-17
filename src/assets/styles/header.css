@@ -81,6 +81,10 @@
     line-height: 1.8rem;
   }
   
+.submenu-item a{
+  color: white;
+}
+
   .nav-icons {
     display: flex;
     gap: 15px;
