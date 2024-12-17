@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Records from './components/Records';
 import Cassettes from './components/Cassettes';
+import Stories from './components/Stories';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/records" element={<Records />} />
               <Route path="/cassettes" element={<Cassettes />} />
+              <Route path="/stories" element={<Stories />} />
              </Routes>
 
          <Footer/>

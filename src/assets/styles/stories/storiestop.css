@@ -1,0 +1,62 @@
+/* Container styling */
+.storiestop-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Grid layout for images */
+  .storiestop_image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 15px; /* Space between images */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for each image */
+  .storiestop_image-item img {
+    width: 100%; /* Ensures image takes full container width */
+    height: 400px; /* Fixed height for all images */
+    object-fit: cover; /* Crops images proportionally */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow */
+  }
+  
+  /* Button container */
+  .storiestop_button-container {
+    text-align: center;
+  }
+  
+  /* Load more button styling */
+  .load-more {
+    background-color:black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .storiestop_image-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-gap: 10px; /* Reduce gap for smaller screens */
+    }
+
+    .storiestop_image-item img {
+        height: 250px; /* Smaller image height */
+    }
+
+    .load-more {
+        font-size: 14px; /* Slightly smaller button */
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .storiestop_image-item img {
+        height: 200px; /* Further reduce height for very small screens */
+    }
+}
