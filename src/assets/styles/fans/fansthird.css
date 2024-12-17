@@ -70,6 +70,7 @@
     .fansthird-container {
         flex-direction: column;
         padding: 10px;
+        overflow-x: hidden;
     }
 
     .fansthird-left, .fansthird-right {
