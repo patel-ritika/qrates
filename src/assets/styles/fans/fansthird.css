@@ -1,0 +1,97 @@
+/* Container with grey background */
+.fansthird-container {
+    display: flex;
+    align-items: center;
+    background-color: #E0E0E0; /* Grey background */
+    padding: 20px;
+    border: 2px solid black;
+}
+
+/* Left Side - Image */
+.fansthird-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fansthird-image {
+    width: 100%;
+    max-width: 400px; /* Adjust image size */
+    border: 2px solid black; /* Black border */
+}
+
+/* Right Side - Content */
+.fansthird-right {
+    flex: 1;
+    padding: 20px;
+}
+
+/* FEATURES Title */
+.fansthird-title {
+    font-size: 18px;
+    background-color: white; /* White background */
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 40rem;
+}
+
+/* Combined container for Heading and Description */
+.fansthird-content {
+    background-color: white; /* White background */
+    border: 2px solid black; /* Black border */
+    padding: 20px; /* Add padding to both elements inside */
+}
+
+/* H1 Heading */
+.fansthird-heading {
+    font-size: 30px;
+    text-align: left;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 1.5; /* Spacing between lines */
+}
+
+/* H4 Description */
+.fansthird-description {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    color: black;
+    line-height: 1.5; /* Adjust spacing */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Stack elements vertically on small screens */
+    .fansthird-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .fansthird-left, .fansthird-right {
+        flex: none;
+        width: 100%; /* Make them take full width */
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .fansthird-title {
+        margin-right: 0; /* Remove right margin on smaller screens */
+    }
+
+    .fansthird-image {
+        max-width: 100%; /* Ensure image takes up full width */
+        margin-bottom: 20px; /* Add space between image and title */
+    }
+
+    .fansthird-heading {
+        font-size: 24px; /* Slightly reduce font size */
+    }
+
+    .fansthird-description {
+        font-size: 16px; /* Adjust font size for readability */
+    }
+}
