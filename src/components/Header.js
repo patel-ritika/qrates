@@ -51,8 +51,12 @@ const toggleMenu = () => {
                 </ul>
               )}
             </li>
-            <li className="nav-item">FOR ARTISTS</li>
-            <li className="nav-item">FOR FANS</li>
+            <li className="nav-item">
+              <Link to="/artists">FOR ARTISTS</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/fans">FOR FANS</Link>
+            </li>
           </ul>
         </nav>
 
@@ -97,8 +101,12 @@ const toggleMenu = () => {
                                 </ul>
                             )}
                         </li>
-                        <li className="mobile-nav-item">FOR ARTISTS</li>
-                        <li className="mobile-nav-item">FOR FANS</li>
+                        <li className="mobile-nav-item">
+                          <Link to="/artists">FOR ARTISTS</Link>
+                        </li>
+                        <li className="mobile-nav-item">
+                          <Link to="/fans">FOR FANS</Link>
+                        </li>
                     </ul>
                 </nav>
                 <div className="mobile-buttons">

@@ -7,6 +7,8 @@ import Records from './components/Records';
 import Cassettes from './components/Cassettes';
 import Stories from './components/Stories';
 import Qrates from './components/Qrates';
+import Artist from './components/Artist';
+import Fans from './components/Fans';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
               <Route path="/cassettes" element={<Cassettes />} />
               <Route path="/stories" element={<Stories />} />
               <Route path="/qrates curated" element={<Qrates Curated />} />
+              <Route path="/artists" element={<Artist />} />
+              <Route path="/fans" element={<Fans />} />
              </Routes>
 
          <Footer/>
