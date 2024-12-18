@@ -1,0 +1,85 @@
+/* Container Styling */
+.artistfour-container {
+    display: flex;
+    height: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Left Section Styling */
+  .artistfour-left {
+    flex: 1;
+    background-color: lightgray;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .artistfour-left h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .artistfour-left h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .artistfour-left h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Right Section Styling */
+  .artistfour-right {
+    flex: 1;
+    background-color: #FFF804;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .artistfour-right h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .artistfour-right h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .artistfour-right h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .artistfour-container {
+      flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+  
+    .artistfour-left,
+    .artistfour-right {
+      width: 100%; /* Full width on mobile */
+    }
+  
+    .artistfour-left h2,
+    .artistfour-right h2 {
+      font-size: 1.5rem;
+    }
+  
+    .artistfour-left h3,
+    .artistfour-right h3 {
+      font-size: 1.1rem;
+    }
+  
+    .artistfour-left h4,
+    .artistfour-right h4 {
+      font-size: 0.9rem;
+    }
+  }
+
+  
