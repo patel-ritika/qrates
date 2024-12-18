@@ -1,0 +1,126 @@
+/* Container styling */
+.artistthird-container {
+    display: flex;
+    height: 120vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Left Section Styling */
+  .artistthird_left-section {
+    flex: 1;
+    background-color: lightgray;
+    padding: 20px;
+  }
+  
+  .artistthird_left-section h5.artistthird_box {
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+    display: inline-block;
+  }
+  
+  .artistthird_left-section h1 {
+    margin-top: 20px;
+    font-size: 2.2rem;
+  }
+  
+  .artistthird_left-section h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  
+  .artistthird_left-section h2 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  .artistthird_left-section h3 {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    color: black;
+  }
+  
+  /* Right Section Styling */
+  .artistthird_right-section {
+    flex: 1;
+    background-color: #fff804;
+    padding: 20px;
+  }
+  
+  .artistthird_right-section h5.artistthird_box {
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+    display: inline-block;
+  }
+  
+  .artistthird_right-section h1 {
+    margin-top: 20px;
+    font-size: 2.2rem;
+  }
+  
+  .artistthird_right-section h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  
+  .artistthird_right-section h2 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  .artistthird_right-section img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+  }
+  
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .artistthird-container {
+        overflow-x: hidden;
+      flex-direction: column; /* Stack sections vertically */
+    }
+  
+    .artistthird_left-section, 
+    .artistthird_right-section {
+      flex: none;
+      width: 90%; /* Full width on mobile */
+    }
+  
+    .artistthird_left-section h1,
+    .artistthird_right-section h1 {
+        text-align: left;
+      font-size: 1.8rem; /* Smaller font size for mobile */
+    }
+  
+    .artistthird_left-section h4,
+    .artistthird_right-section h4 {
+        text-align: left;
+      font-size: 1rem;
+    }
+  
+    .artistthird_left-section h2,
+    .artistthird_right-section h2 {
+        text-align: left;
+      font-size: 1.3rem;
+    }
+  
+    .artistthird_left-section h3 {
+      font-size: 1.1rem;
+      text-align: left;
+    }
+  
+    .artistthird_right-section img {
+      max-width: 90%; /* Adjust image size */
+      margin: 0 auto; /* Center align image */
+      display: block;
+    }
+  }
