@@ -1,0 +1,95 @@
+/* artistsecond.css */
+.artistsecond-container {
+    text-align: center;
+    margin-top: 5rem;
+    font-family: Arial, sans-serif;
+}
+
+.artistsecond-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.artistsecond-header hr {
+    width: 57%;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+.artistsecond-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem 0;
+}
+
+.artistsecond-left,
+.artistsecond-right {
+    flex: 1;
+    padding: 1rem;
+}
+
+.artistsecond-left h1,
+.artistsecond-right h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.artistsecond-left h4,
+.artistsecond-right h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.artistsecond-left img,
+.artistsecond-right img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.artistsecond-divider {
+    width: 2px;
+    background-color: #000;
+    margin: 0 1rem;
+}
+
+.artistsecond-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem 0;
+}
+
+.artistsecond-footer h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+
+.artistsecond-content{
+    overflow-x: hidden;
+}
+
+    .artistsecond-content {
+        flex-direction: row; /* Switch to row layout for larger screens */
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .artistsecond-left,
+    .artistsecond-right {
+        width: 45%; /* Adjust width for row layout */
+    }
+
+    .artistsecond-divider {
+        display: block; /* Show the divider in row layout */
+        width: 2px;
+        background-color: #000;
+        margin: 0 1rem;
+        overflow-x: hidden;
+    }
+}

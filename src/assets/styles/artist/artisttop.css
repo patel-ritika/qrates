@@ -52,6 +52,7 @@
     .artisttop-container {
       flex-direction: column;
       padding: 20px;
+      overflow-x: hidden;
     }
   
     .artisttop_left-side {
