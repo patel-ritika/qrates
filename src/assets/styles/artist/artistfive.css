@@ -1,0 +1,130 @@
+.artistfive-container {
+    display: flex;
+    height: 110vh;
+  }
+  
+  .artistfive_left-section,
+  .artistfive_right-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .artistfive_left-section {
+    background-color: #81836C;
+    color: black;
+  }
+  
+  .artistfive_right-section {
+    background-color: #ffe2e6;
+    color: #000;
+  }
+  
+  .artistfive_image {
+    width: 350px;
+    height: 250px;
+    border: 2px solid black;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .artistfive_title {
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .artistfive_heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  
+  .artistfive_subheading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .artistfive_button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .artistfive-container {
+      flex-direction: column;
+      height: auto;
+    }
+  }
+  
+  .artistfive_left-section,
+  .artistfive_right-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .artistfive_left-section {
+    background-color: #81836C;
+    color: black;
+  }
+  
+  .artistfive_right-section {
+    background-color: #ffe2e6;
+    color: #000;
+  }
+  
+  .artistfive_image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border: 2px solid black;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .artistfive_title {
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .artistfive_heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  
+  .artistfive_subheading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .artistfive_button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size:16px;
+  }
